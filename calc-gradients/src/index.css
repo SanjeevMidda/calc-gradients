@@ -1,0 +1,57 @@
+:root {
+  --radius: 10%;
+  --width: 50px;
+  --height: 50px;
+  --gradient: ;
+}
+
+* {
+  margin: 0px;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 200;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100dvh;
+  flex-direction: column;
+}
+
+.block {
+  background-color: blue;
+  width: var(--width);
+  height: var(--height);
+}
+
+.block:nth-of-type(1) {
+  border-radius: calc(var(--radius) + 5%) calc(var(--radius) + 5%)
+    calc(var(--radius) + 5%) calc(var(--radius) + 5%);
+  background: linear-gradient(hsl(0 100% 50%), hsl(0, 67%, 20%));
+}
+
+.block:nth-of-type(2) {
+  border-radius: calc(var(--radius) + 10%) calc(var(--radius) + 10%)
+    calc(var(--radius) + 10%) calc(var(--radius) + 10%);
+}
+
+.block:nth-of-type(3) {
+  border-radius: calc(var(--radius) + 20%) calc(var(--radius) + 20%)
+    calc(var(--radius) + 20%) calc(var(--radius) + 20%);
+}
+
+.block:nth-of-type(4) {
+  border-radius: calc(var(--radius) + 30%) calc(var(--radius) + 30%)
+    calc(var(--radius) + 30%) calc(var(--radius) + 30%);
+}
+
+.block:nth-of-type(5) {
+  border-radius: calc(var(--radius) + 40%) calc(var(--radius) + 40%)
+    calc(var(--radius) + 40%) calc(var(--radius) + 40%);
+}
+
+.blockContainer {
+  display: flex;
+  gap: 5px;
+}
